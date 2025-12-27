@@ -1,0 +1,26 @@
+body {
+    background: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #1f2933;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+}
+
+
+.navbar a {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 80px;
+}
+
