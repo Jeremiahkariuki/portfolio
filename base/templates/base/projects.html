@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<P>All Projects </P>
+<div class="projects-grid">
+    {% for p in projects %}
+    <div class="project-card">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.description }}</p>
+
+        <div class="tags">
+            {% for t in p.built_with %}
+              <span class="tag">{{ t }}</span>
+            {% endfor %}
+        </div>
+
+        <div class="links">
+            {% if p.github %}
+              <a href="{{ p.github }}" target="_blank">GitHub</a>
+            {% endif %}
+            {% if p.live %}
+              <a href="{{ p.live }}" target="_blank">Live</a>
+            {% endif %}
+        </div>
+    </div>
+    {% empty %}
+    <p>No projects Added yet.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}
