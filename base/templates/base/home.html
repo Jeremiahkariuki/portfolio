@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div class="container">
+    
+    <h1>Hello, I’m Jeremiah 👋</h1>
+    <h3>Python & Django Developer</h3>
+
+    <p class="intro">
+        i build scalable web applications and backend systems using Python and Django.
+        Passionate about clean archtecture and real-world problem solving, 
+        and dedicated to delivering high-quality code and continuously improving my skills to stay up-to-date with 
+        the latest technologies in the software development industry.
+    </p>
+
+    <div class="hero-buttons">
+        <a href="{% url 'projects' %}" class="btn-primary">View Projects</a>
+        <a href="{% url 'contacts' %}" class="btn-outline">Contact Me</a>
+    </div>
+
+    <section class="skills-preview">
+        <h3>Tech Stack</h3>
+        <span class="tag">Python</span>
+        <span class="tag">Django</span>
+        <span class="tag">HTML/CSS</span>
+        <span class="tag">Git & Github</span>
+        <span class="tag">sqlite3</span>
+    </section>
+
+</div>
+{% endblock %}
