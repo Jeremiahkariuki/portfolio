@@ -1,29 +1,247 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<h1>SOFTWARE IS MY HOBBY</h1>
 
-<p>
-    Hi, i'm <b>Jeremiah</b>, a Python & Django developer, i build all  type of website/systems and am commited to work alot.
-         I have a passion for learning and creating innovative solutions. With a strong background in Python and Django, 
-         I specialize in developing robust web applications that meet the needs of clients and users. 
-         I am dedicated to delivering high-quality code and continuously improving my skills to stay up-to-date with the latest technologies in the software development industry.
-</p>
+<div style="padding-top: 20px;">
 
-<h3>Skills</h3>
-<div class="tags">
-    <span class="tag">Python</span>
-    <span class="tag">Django</span>
-    <span class="tag"> HTML/CSS</span>
-    <span class="tag">Git & Github</span>
-    <span class="tag">sqlite3</span>
+    <!-- Header -->
+    <div class="fade-in" style="margin-bottom: 50px;">
+        <h1 class="section-title">About Me</h1>
+        <p class="section-subtitle">Backend Developer | Python | Django | QA Tester | Odoo Developer | Cloud Services</p>
+    </div>
+
+    <!-- Bio -->
+    <div class="glass-card fade-in" style="margin-bottom: 30px;">
+        <h2 style="margin-bottom: 20px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-size: 0.75rem;">Professional Summary</h2>
+        <p class="about-bio">
+            Backend developer with <strong style="color: var(--white);">3+ years of experience</strong> using Python to design and build server-side systems —
+            RESTful APIs, data models, authentication, and automated workflows. Experience spans ERP development, SaaS platforms,
+            productivity tools, and quality assurance across freelance and full-time roles in Kenya and Somalia.
+            Growing specialisation in <strong style="color: var(--accent);">Odoo ERP customisation</strong>.
+            Comfortable owning a project end-to-end: from requirements and data modelling through testing, deployment, and support.
+        </p>
+    </div>
+
+    <!-- Work Experience -->
+    <div class="glass-card fade-in" style="margin-bottom: 30px;">
+        <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 30px;">Work Experience</h2>
+
+        <!-- Pyostay -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">Co-founder &amp; Senior Back End Developer</div>
+                    <div class="work-company">Pyostay.com</div>
+                </div>
+                <span class="work-date">Jul 2025 – Present &nbsp;|&nbsp; Kenya, Remote</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Co-founded and developed a SaaS property management platform for landlords, agents, and tenants.</li>
+                <li>Developed and maintained scalable backend systems in Python, contributing to core product infrastructure.</li>
+                <li>Designed RESTful APIs and maintained server-side logic to support web application features.</li>
+                <li>Integrated payment systems and automated billing and subscription workflows.</li>
+                <li>Collaborated with cross-functional teams to deliver high-quality, well-tested code on schedule.</li>
+            </ul>
+        </div>
+
+        <!-- Omanya Technologies -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">Backend Developer &amp; QA Tester</div>
+                    <div class="work-company">Omanya Technologies</div>
+                </div>
+                <span class="work-date">Aug 2025 – Jan 2026 &nbsp;|&nbsp; Somalia, Remote</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Conducting comprehensive system testing of company platforms to ensure quality and reliability.</li>
+                <li>Collaborating with cross-functional teams to align technical development with business goals.</li>
+                <li>Identifying, documenting, and tracking bugs; collaborating with developers to drive resolution.</li>
+                <li>Overseeing backend architecture, database optimisation, and integrations with payment providers.</li>
+                <li>Incorporating usage-based commission structures, user management systems, and dynamic fee calculations.</li>
+            </ul>
+        </div>
+
+        <!-- jdiary Freelance -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">Lead Developer, Full Stack Engineer</div>
+                    <div class="work-company">jdiary (Freelance)</div>
+                </div>
+                <span class="work-date">Mar 2024 – Jul 2024 &nbsp;|&nbsp; Nauru, Kiambu, Kenya, Remote</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Developed a personal productivity and reflection platform using Python and Django.</li>
+                <li>Integrated Django REST Framework (DRF) to build scalable API endpoints for dynamic data retrieval.</li>
+                <li>Engineered a mood-tracking system with a custom algorithm to calculate user streaks and drive engagement.</li>
+                <li>Implemented automated PDF export using xhtml2pdf for offline data access.</li>
+                <li>Configured production hardening: WhiteNoise static file management, SSL redirection, HSTS, and secure cookies.</li>
+                <li>Deployed on Render Cloud with PostgreSQL and Gunicorn; set up a CI/CD pipeline via GitHub.</li>
+                <li>Designed a responsive glassmorphism UI with mood-aware components.</li>
+            </ul>
+        </div>
+
+        <!-- JK Security -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">Odoo Developer / Python &amp; Django Developer</div>
+                    <div class="work-company">JK Security Service (Freelance)</div>
+                </div>
+                <span class="work-date">Jan 2023 – Jan 2026 &nbsp;|&nbsp; Kenya, Remote</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Built a complete Security Services ERP from scratch using Odoo 17 (Python, XML, PostgreSQL) as a full-stack solution for security companies in Kenya.</li>
+                <li>Developed 12 custom Odoo modules including Guards Management, Shift Scheduling, HR Recruitment, Payroll, Incident Reports, and Complaint Management.</li>
+                <li>Built custom Python models with computed fields, constraints, and workflow state machines.</li>
+                <li>Designed XML views across List, Form, Kanban, Calendar, Graph, and Pivot view types.</li>
+                <li>Implemented role-based access control with 8 user groups and record-level security rules.</li>
+                <li>Integrated payroll, PAYE, and tax deduction calculations into the Payroll module.</li>
+                <li>Generated PDF reports using the QWeb templating engine.</li>
+                <li>Wrote unit tests using the Odoo TransactionCase framework to validate core business logic.</li>
+            </ul>
+        </div>
+
+        <!-- Njane Software -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">Software Developer</div>
+                    <div class="work-company">Njane Software Labs</div>
+                </div>
+                <span class="work-date">Jul 2025 – Aug 2025 &nbsp;|&nbsp; Nairobi County, Kenya, Remote</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Designed and developed business management software using the Django framework.</li>
+                <li>Collaborated with cross-functional teams to gather requirements and deliver solutions on time.</li>
+            </ul>
+        </div>
+
+        <!-- VR Lab -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">Back End Developer</div>
+                    <div class="work-company">VR Lab by Soft &amp; Skills</div>
+                </div>
+                <span class="work-date">Jan 2019 – Jan 2025 &nbsp;|&nbsp; Remote</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Built and maintained server-side features using Django, HTML, and back-end technologies.</li>
+                <li>Integrated third-party APIs and optimised database queries for performance.</li>
+            </ul>
+        </div>
+
+        <!-- Remotask -->
+        <div class="work-item">
+            <div class="work-header">
+                <div>
+                    <div class="work-title">AI Training</div>
+                    <div class="work-company">Remotask</div>
+                </div>
+                <span class="work-date">Jan 2024 – Dec 2024 &nbsp;|&nbsp; Remote, Part-time</span>
+            </div>
+            <ul class="work-bullets">
+                <li>Trained and evaluated AI/ML models through data annotation and quality review.</li>
+                <li>Contributed to improving model accuracy across a range of NLP and computer vision projects.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Skills -->
+    <div class="glass-card fade-in" style="margin-bottom: 30px;">
+        <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 30px;">Technical Skills</h2>
+
+        <div class="skill-category">
+            <div class="skill-category-title">Odoo ERP</div>
+            <div>
+                <span class="tag">Odoo 17</span>
+                <span class="tag">Custom Module Development</span>
+                <span class="tag">ORM Model Design</span>
+                <span class="tag">Computed Fields &amp; Constraints</span>
+                <span class="tag">Workflow State Machines</span>
+                <span class="tag">XML Views (List/Form/Kanban/Calendar/Graph/Pivot)</span>
+                <span class="tag">QWeb Reporting</span>
+                <span class="tag">payslip/PAYE/Tax Logic</span>
+                <span class="tag">Odoo TransactionCase unit testing</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-category-title">Backend Development</div>
+            <div>
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">Django REST Framework</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">JWT / OAuth</span>
+                <span class="tag">Session-based auth</span>
+                <span class="tag">Background Tasks</span>
+                <span class="tag">Celery</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-category-title">Databases</div>
+            <div>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">SQL Query Optimisation</span>
+                <span class="tag">Schema Design</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-category-title">Cloud &amp; DevOps</div>
+            <div>
+                <span class="tag">Render Cloud</span>
+                <span class="tag">Gunicorn</span>
+                <span class="tag">WhiteNoise</span>
+                <span class="tag">Docker</span>
+                <span class="tag">Git &amp; GitHub</span>
+                <span class="tag">GitHub Actions CI/CD</span>
+                <span class="tag">Linux/CLI</span>
+                <span class="tag">DigitalOcean</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-category-title">Frontend</div>
+            <div>
+                <span class="tag">React.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">HTML / CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Responsive UI Design</span>
+            </div>
+        </div>
+
+        <div class="skill-category">
+            <div class="skill-category-title">QA &amp; Testing</div>
+            <div>
+                <span class="tag">Test Case Design &amp; Execution</span>
+                <span class="tag">Unit Testing</span>
+                <span class="tag">Manual Testing</span>
+                <span class="tag">Automated Regression Testing</span>
+                <span class="tag">Bug Tracking</span>
+                <span class="tag">Postman API Testing</span>
+                <span class="tag">Cross-functional QA Collaboration</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Availability -->
+    <div class="availability-banner fade-in">
+        <div class="availability-dot"></div>
+        <div class="availability-text">
+            <strong>Available for Immediate Joining</strong>
+            <span>Fully flexible on working arrangement — remote, on-site, or hybrid. Open to relocation for the right opportunity.</span>
+        </div>
+    </div>
 
 </div>
-
-<h3>Goal</h3>
-<p>
-    My goal is to grow into a professional software developer,
-    contributing to impactful projects and continuously expanding my knowledge and expertise in the field of software development.
-     I am committed to honing my skills, collaborating with other developers, and making meaningful contributions to the tech community.
-</p>
 {% endblock %}

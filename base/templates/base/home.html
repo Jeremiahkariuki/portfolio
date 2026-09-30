@@ -1,31 +1,79 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<div class="container">
-    
-    <h1>Hello, I’m Jeremiah 👋</h1>
-    <h3>Python & Django Developer</h3>
+<section class="hero">
 
-    <p class="intro">
-        i build scalable web applications and backend systems using Python and Django.
-        Passionate about clean archtecture and real-world problem solving, 
-        and dedicated to delivering high-quality code and continuously improving my skills to stay up-to-date with 
-        the latest technologies in the software development industry.
+    <!-- Available badge -->
+    <div class="hero-label fade-in">Available for hire — Remote / On-site, Nairobi</div>
+
+    <!-- Name & Title -->
+    <h1 class="hero-title fade-in">
+        Jeremiah<br>Kariuki Beth
+    </h1>
+    <p class="hero-subtitle fade-in">
+        Backend Developer &nbsp;·&nbsp; Python &amp; Django &nbsp;·&nbsp; Odoo &nbsp;·&nbsp; QA Tester &nbsp;·&nbsp; Cloud Services
+    </p>
+    <p class="hero-desc fade-in">
+        3+ years building scalable server-side systems, RESTful APIs, data models, and automated workflows.
+        Experienced in SaaS platforms, Odoo ERP development, and full-time remote roles across Kenya and Somalia.
+        End-to-end ownership from requirements and data modelling through testing, deployment and support.
     </p>
 
-    <div class="hero-buttons">
-        <a href="{% url 'projects' %}" class="btn-primary">View Projects</a>
-        <a href="{% url 'contacts' %}" class="btn-outline">Contact Me</a>
+    <!-- CTA Buttons -->
+    <div class="hero-buttons fade-in">
+        <a href="{% url 'projects' %}" class="btn btn-primary">View My Projects</a>
+        <a href="{% url 'about' %}" class="btn btn-outline">My Experience</a>
+        <a href="{% url 'contacts' %}" class="btn btn-outline">Contact Me</a>
     </div>
 
-    <section class="skills-preview">
-        <h3>Tech Stack</h3>
-        <span class="tag">Python</span>
-        <span class="tag">Django</span>
-        <span class="tag">HTML/CSS</span>
-        <span class="tag">Git & Github</span>
-        <span class="tag">sqlite3</span>
-    </section>
+    <!-- Stats -->
+    <div class="stats-row fade-in">
+        <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Projects Delivered</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">5+</span>
+            <span class="stat-label">Companies</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Odoo Modules</span>
+        </div>
+    </div>
 
-</div>
+    <hr class="divider">
+
+    <!-- Tech Stack -->
+    <div class="skills-section fade-in">
+        <h3>Tech Stack</h3>
+        <div class="skills-row">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">Django REST Framework</span>
+            <span class="tag">Odoo 17</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">GitHub Actions CI/CD</span>
+            <span class="tag">WhiteNoise</span>
+            <span class="tag">Render Cloud</span>
+            <span class="tag">JWT / OAuth</span>
+            <span class="tag">Postman</span>
+            <span class="tag">QA Testing</span>
+        </div>
+    </div>
+
+</section>
 {% endblock %}

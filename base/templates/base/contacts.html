@@ -1,29 +1,97 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<h1>Contact Me</h1>
 
-<div class="contact-container">
+<div style="padding-top: 20px;">
 
-    <p><strong>📞 Phone: <strong> +254743341474 </p>
+    <div class="fade-in" style="margin-bottom: 50px;">
+        <h1 class="section-title">Let's Connect</h1>
+        <p class="section-subtitle">Available for remote, hybrid, or on-site roles. Reach out and let's talk.</p>
+    </div>
 
-    <p><strong>📧 Email:</strong>
-      <a href="mailto:jeremmykariz001@gmail.com">
-        jeremmykariz001@gmail.com
-      </a>
-    </p>
-    <p><strong>📍 Location:</strong> Nairobi, Kenya</p>
+    <!-- Availability banner -->
+    <div class="availability-banner fade-in">
+        <div class="availability-dot"></div>
+        <div class="availability-text">
+            <strong>Open to Work — Immediate Start</strong>
+            <span>Available for full-time, part-time, contract, or freelance opportunities worldwide. Fully flexible on remote or on-site.</span>
+        </div>
+    </div>
 
-    <p><strong>🌐 LinkedIn:</strong> 
-        <a href="https://www.linkedin.com/in/jeremiah-kariuki-a30b4b222/" target="_blank">
-         LinkedIn Profile
-        </a>
-    </p>
-    <p><strong>💻 GitHub:</strong>
-      <a href="https://github.com/Sikarjb" target="_blank">
-        Github Profile
-      </a>
-    </p>
+    <!-- Contact Cards -->
+    <div class="contact-grid fade-in">
+
+        <div class="contact-item">
+            <div class="contact-icon">📞</div>
+            <div class="contact-info">
+                <strong>Phone</strong>
+                <a href="tel:+254743341474">+254 743 341 474</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-info">
+                <strong>Email</strong>
+                <a href="mailto:jeremmykariz001@gmail.com">jeremmykariz001@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-info">
+                <strong>Location</strong>
+                <span>Nairobi, Kenya</span>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div class="contact-info">
+                <strong>LinkedIn</strong>
+                <a href="https://www.linkedin.com/in/jeremiah-kariuki-a30b4b222/" target="_blank">
+                    linkedin.com/in/jeremiah-kariuki
+                </a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">💻</div>
+            <div class="contact-info">
+                <strong>GitHub</strong>
+                <a href="https://github.com/Sikarjb" target="_blank">github.com/Sikarjb</a>
+            </div>
+        </div>
+
+        <div class="contact-item">
+            <div class="contact-icon">🌍</div>
+            <div class="contact-info">
+                <strong>Work Preference</strong>
+                <span>Remote / On-site / Open to relocation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="divider">
+
+    <!-- Quick Info -->
+    <div class="glass-card fade-in" style="margin-top: 10px;">
+        <h2 style="font-size: 1.1rem; margin-bottom: 16px; color: var(--accent); text-shadow: 0 0 15px var(--accent-glow); font-family: var(--font-display);">Why Hire Me?</h2>
+        <p style="margin-bottom: 12px;">
+            3+ years delivering backend systems end-to-end — from architecture and database design through deployment and ongoing support.
+            Comfortable working independently or as part of a cross-functional team, in fast-moving startups or structured enterprise environments.
+        </p>
+        <p>
+            With deep experience in <strong style="color: var(--white);">Python, Django, Odoo ERP</strong> and a growing full-stack capability
+            (React.js, TypeScript, Node.js), I'm ready to add immediate value and keep growing with your team.
+        </p>
+        <div style="margin-top: 24px; display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="mailto:jeremmykariz001@gmail.com" class="btn btn-primary">📧 Send an Email</a>
+            <a href="https://www.linkedin.com/in/jeremiah-kariuki-a30b4b222/" target="_blank" class="btn btn-outline">💼 LinkedIn Profile</a>
+            <a href="https://github.com/Sikarjb" target="_blank" class="btn btn-outline">💻 GitHub Profile</a>
+        </div>
+    </div>
+
 </div>
-
 {% endblock %}

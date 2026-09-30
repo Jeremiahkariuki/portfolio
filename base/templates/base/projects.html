@@ -1,31 +1,71 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-<P>All Projects </P>
-<div class="projects-grid">
-    {% for p in projects %}
-    <div class="project-card">
-        <h3>{{ p.title }}</h3>
-        <p>{{ p.description }}</p>
 
-        <div class="tags">
-            {% for t in p.built_with %}
-              <span class="tag">{{ t }}</span>
-            {% endfor %}
+<div style="padding-top: 20px;">
+
+    <div class="fade-in" style="margin-bottom: 40px;">
+        <h1 class="section-title">Projects</h1>
+        <p class="section-subtitle">A selection of systems and applications I've designed and shipped.</p>
+    </div>
+
+    <!-- Main Projects -->
+    <div class="projects-grid">
+        {% for p in projects %}
+        <div class="project-card fade-in">
+            <h3>{{ p.title }}</h3>
+            <p>{{ p.description }}</p>
+            <div class="tags" style="margin-top: 4px;">
+                {% for t in p.built_with %}
+                  <span class="tag">{{ t }}</span>
+                {% endfor %}
+            </div>
+            <div class="project-links">
+                {% if p.github %}
+                  <a href="{{ p.github }}" target="_blank" class="project-link">GitHub ↗</a>
+                {% endif %}
+                {% if p.live %}
+                  <a href="{{ p.live }}" target="_blank" class="project-link live">Live Site ↗</a>
+                {% endif %}
+            </div>
         </div>
+        {% empty %}
+        <p style="color: var(--muted);">No projects added yet.</p>
+        {% endfor %}
+    </div>
 
-        <div class="links">
-            {% if p.github %}
-              <a href="{{ p.github }}" target="_blank">GitHub</a>
-            {% endif %}
-            {% if p.live %}
-              <a href="{{ p.live }}" target="_blank">Live</a>
-            {% endif %}
+    <hr class="divider">
+
+    <!-- Open Source & Freelance -->
+    <div class="fade-in" style="margin-bottom: 30px;">
+        <h2 class="section-title" style="font-size: 1.4rem; margin-bottom: 20px;">Open Source &amp; Freelance Projects</h2>
+        <div class="opensource-grid">
+            <div class="opensource-item">
+                <strong>security-services</strong>
+                <span>Security Services Management System built on Odoo — companion open-source repo to the JK Security ERP above. 1 fork.</span>
+            </div>
+            <div class="opensource-item">
+                <strong>HAPPY-CHURCH-RURU</strong>
+                <span>Full-featured church management web app (PHP) handling member records, events, and announcements. 2 stars.</span>
+            </div>
+            <div class="opensource-item">
+                <strong>jk-First</strong>
+                <span>Python project. 1 star, 1 fork.</span>
+            </div>
+            <div class="opensource-item">
+                <strong>gym-website</strong>
+                <span>Responsive gym website (Python) covering services, class schedules, and trainer profiles. 1 star.</span>
+            </div>
+            <div class="opensource-item">
+                <strong>my-portfolio</strong>
+                <span>Personal developer portfolio site built with Python &amp; Django.</span>
+            </div>
+            <div class="opensource-item">
+                <strong>personal-diary-planner</strong>
+                <span>Customisable digital journal and planner to organise tasks, log moods, and archive memories. Python.</span>
+            </div>
         </div>
     </div>
-    {% empty %}
-    <p>No projects Added yet.</p>
-    {% endfor %}
-</div>
 
+</div>
 {% endblock %}
