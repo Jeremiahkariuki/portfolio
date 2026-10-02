@@ -19,7 +19,7 @@ def projects(request):
                            "payment tracking, tenant ledgers, automated rent reminders, utility meter readings, and public property listings.",
             "built_with": ["Python", "Django", "Django REST Framework", "PostgreSQL", "M-Pesa API"],
             "github": "",
-            "live": "https://pyostay.com",
+            "live": "https://pystay.com",
             "status": "Live",
         },
         {
